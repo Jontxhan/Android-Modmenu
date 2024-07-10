@@ -1,0 +1,19 @@
+plugins {
+    id 'com.android.libary'
+}
+
+android {
+    namespace 'com.eazy.hack'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 24
+        targetSdk 34
+
+        externalNativeBuild {
+            cmake {
+                cppFlags '-std=c++20'
+            }
+        }
+
+    buildTypes {}
